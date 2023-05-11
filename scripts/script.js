@@ -40,7 +40,6 @@ music.onclick = () => {
 }
 
 document.addEventListener("keydown", e => {
-    console.log(e.code);
     switch(e.code) {
         case "Escape":
             if (modal.style.display === "block") {
