@@ -228,7 +228,7 @@ main {
 
 #git::after {
     top: 20%;
-    content: url(/img/github.svg);
+    content: url(https://raw.githubusercontent.com/tsayvyac/tetrisjs/master/img/github.svg);
 }
 
 #linkedin::before {
@@ -237,7 +237,7 @@ main {
 
 #linkedin::after {
     top: 20%;
-    content: url(/img/linkedin.svg);
+    content: url(https://raw.githubusercontent.com/tsayvyac/tetrisjs/master/img/linkedin.svg);
 }
 
 .modal-descrip {
