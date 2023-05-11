@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/tetris.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/game.css">
+    <title>Tetris</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span>paus<span class="key">[e]</span></span>
+        </nav>
+    </header>
+    <main>
+        <div id="gameView">
+        </div>
+        <div class="modal-dialog">
+            <p>Pause</p>
+            <div>
+                <div>
+                    <p>music:<span id="music">[x]</span></p>
+                    <p>Press <span class="key">[Enter]</span> to resume</p>
+                    <button onclick="window.location.reload(true)">Restart</button>
+                    <a href="." id="menu">Menu</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="game-over">
+        <div class="over-content">
+            <h1>GAME OVER</h1>
+            <div class="score">
+                <p>Score: </p><span id="score-n"></span>
+            </div>
+            <div class="form">
+                <form id="form">
+                    <label for="name">Enter your name:</label><br><br>
+                    <input id="name" name="name" type="text" placeholder="Your name" minlength="3" pattern="^[a-zA-Z0-9_.]*$">
+                    <input type="text" name="score" id="score-input">
+                    <input id="sub" type="submit" value="submit">
+                </form>
+            </div>
+            <br><p>Press <span class="key">[Enter]</span> to restart</p>
+        </div>
+    </div>
+    <audio id="theme" loop>
+        <source src="/audio/theme.mp3">
+    </audio>
+    <script type="module" src="./scripts/game/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="./img/tetris.svg" type="image/x-icon">
+    <title>Tetris | Menu</title>
+</head>
+<body>
+    <header>
+        <div class="settings">
+            <div>
+                <span class="key">[m]</span>usic:<span id="music">[o]</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="logo">
+            <div class="tetris">
+                <span style="color: red">T</span><span style="color: orange">E</span><span style="color: yellow">T</span><span style="color: green">R</span><span style="color: cyan">I</span><span id="caret" style="color: purple">S</span>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="menu">
+                <a id="play" href="game.html">Pl<span class="key">[a]</span>y Tetris</a>
+                <a id="records" href="records.html"><span class="key">[R]</span>ecords</a>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-top">
+                <span>Created by:</span>
+                <span class="close">[x]</span>    
+            </div>
+            <div class="modal-content">
+                <p>tsayvyac</p>
+                <a id="git" href="https://github.com/tsayvyac" data-front="Github"></a>
+                <a id="linkedin" href="https://www.linkedin.com/in/tsayvyacheslav/" data-front="LinkedIn"></a>
+            </div>
+            <div class="modal-descrip">
+                <p>This is my semester project for <a href="https://dcgi.fel.cvut.cz/courses/kaj">KAJ</a> course</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </main>
+    <footer>
+        <button id="author-btn" tabindex="-1">author</button>
+    </footer>
+    <audio id="theme" autoplay loop>
+        <source src="/audio/theme.mp3">
+    </audio>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
