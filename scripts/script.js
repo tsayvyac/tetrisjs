@@ -19,16 +19,10 @@ closeBtn.onclick = () => {
 }
 
 changeStateMusic = () => {
-    let themePlay = theme.play();
+    let playTheme = theme.play;
     if (music.textContent === "[x]") {
         music.textContent = "[o]";
-        if (themePlay !== undefined) {
-            themePlay
-                .then(_ => {})
-                .catch(_ => {
-                    console.log("Theme music error!")
-                })
-        }
+        theme.play();
     } else {
         music.textContent = "[x]";
         theme.pause();

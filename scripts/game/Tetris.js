@@ -8,9 +8,9 @@ export default class Tetris {
     }
 
     constructor(fieldH, fieldW, over) {
-        this.placeSound = new Audio("/audio/place.mp3");
+        this.placeSound = new Audio("https://raw.githubusercontent.com/tsayvyac/tetrisjs/master/audio/place.mp3");
         this.placeSound.volume = 0.3;
-        this.scoreSound = new Audio("/audio/score.mp3");
+        this.scoreSound = new Audio("https://raw.githubusercontent.com/tsayvyac/tetrisjs/master/audio/score.mp3");
         this.scoreSound.volume = 0.3;
         this.fieldH = fieldH;
         this.fieldW = fieldW;
