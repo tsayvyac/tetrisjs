@@ -31,8 +31,10 @@ Line clear scores[^4]:
 | 3 (triple) | 300    |
 | 4 (tetris) | 1200   |
 
-Depending on the number of points, the game speed and level increase. More level, more bonus points.<br>
+Depending on the number of points, the game speed increase.<br>
 $speed = 1000 - (level * 100)$<br>
+
+For every 10 cleared lines, the level is increased by 1. More level, more bonus points.<br>
 $score += lineClear * (level + 1)$
 
 On some screens you may see red letters in square brackets (e.g. Pl[a]y Tetris) that are hotkeys. When you press such a letter on the keyboard, a certain action will occur. There are sound effects that can be turned on and off
