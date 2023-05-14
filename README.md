@@ -23,7 +23,19 @@ Keys:
 - ⬆️ - rotate tetromino
 - [space] - hard drop
 
-On some screens you may see red letters in square brackets (e.g. Pl[a]y Tetris) that are hotkeys. When you press such a letter on the keyboard, a certain action will occur.
+Line clear scores[^4]:
+| Line clear | Points |
+|------------|--------|
+| 1 (single) | 40     |
+| 2 (double) | 100    |
+| 3 (triple) | 300    |
+| 4 (tetris) | 1200   |
+
+Depending on the number of points, the game speed and level increase. More level, more bonus points.<br>
+$speed = 1000 - (level * 100)$<br>
+$score += lineClear * (level + 1)$
+
+On some screens you may see red letters in square brackets (e.g. Pl[a]y Tetris) that are hotkeys. When you press such a letter on the keyboard, a certain action will occur. There are sound effects that can be turned on and off
 
 ### SRS (Super rotation system) [^2]
 Visualisation of implementation SRS
@@ -33,3 +45,4 @@ Visualisation of implementation SRS
 [^1]: [Tetris Wiki](https://tetris.fandom.com/wiki/Tetris_Wiki)
 [^2]: [Super Rotation System](https://tetris.fandom.com/wiki/SRS)
 [^3]: [Hard drop](https://tetris.fandom.com/wiki/Hard_Drop)
+[^4]: [Scoring](https://tetris.wiki/Scoring)
